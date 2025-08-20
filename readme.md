@@ -24,11 +24,12 @@ A simple Flask-based demo that classifies **live audio** (or uploaded clips) int
 ---
 
 ## 📂 Project Structure
-.
+"""
 ├─ app.py # Flask app (routes/views)
 ├─ audio_flask_classification.py # Audio preprocessing + inference helpers
 ├─ main.py # Entry point to run the server
 └─ README.md
+"""
 
 
 
