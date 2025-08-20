@@ -1,18 +1,38 @@
-## README
->This model still lack of certain coditions, like voice of any other bird or humans or anything other than specified birds voices could be misclassified.
->The acccuracy of this model reaches approximately 55%, which is very low and is due to the dataset collected for this project are very less. 
+# Live Prediction of Bird Species via Audio
+
+A simple Flask-based demo that classifies **live audio** (or uploaded clips) into bird species. The app turns audio into features (e.g., spectrogram/MFCC) and feeds them to a trained model to predict the most likely species — right from your browser.
+
+> ⚠️ Note: This is a student/demo project. Accuracy depends on the dataset and model; expect misclassifications on noisy or unseen sounds.
+
+---
+
+## ✨ Features
+- Web UI (Flask) for quick testing in the browser
+- Live or file-based audio inference flow
+- Preprocessing pipeline for audio (feature extraction)
+- Easily swappable model checkpoint
+
+---
+
+## 📦 Tech Stack
+- **Python**
+- **Flask** for the web app
+- **Audio/ML tooling**: `librosa`, `numpy`, `scikit-learn` (and/or `tensorflow/keras` if your model uses it)
+
+> Exact libraries depend on your model code. See `audio_flask_classification.py` and `app.py` for imports once you finalize dependencies.
+
+---
+
+## 📂 Project Structure
+.
+├─ app.py # Flask app (routes/views)
+├─ audio_flask_classification.py # Audio preprocessing + inference helpers
+├─ main.py # Entry point to run the server
+└─ README.md
 
 
-## Setup:
-1. Change locations of files acordingly to the program
-2. Install the required packages.
-3. DO NOT delete any file.
-4. To run the program:
-    a. Open terminal
-    b. Run python3 main.py
-    c. Open the location in chrome or firefox
-    d. Explore the program with various birds voices.
- 
+
+
  
 
 ## Group Members
